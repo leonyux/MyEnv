@@ -109,7 +109,6 @@ set nobackup
 
 "Taglist and Ctags"""""""""""
 map <F8> :Tlist<CR>
-set tags=~/work/tags/6140/tags "6140 tags
 let Tlist_Show_One_File=1 "allow only current file's tags
 
 "Run Python""""""""""""""""""

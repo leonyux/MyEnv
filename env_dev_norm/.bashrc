@@ -109,22 +109,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#espc develop
-export PATH=$PATH:~/work/scripts:/home/xuyue/work/espc_storm_tools/bin
-export NSC_HOME=/home/xuyue/work/espc
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386/
-
-#jstorm
-export JSTORM_HOME=/home/xuyue/work/jstorm/jstorm
-export PATH=$PATH:$JSTORM_HOME/bin
-
-#storm
-export STORM_HOME=/home/xuyue/work/apache-storm-0.9.1-incubating
-export PATH=$PATH:$STORM_HOME/bin
-
-#storm_python path
-export NSC_HOME=/home/xuyue/work/espc
-
-#JAVA CLASSPATH
-export CLASSPATH=$CLASSPATH:/home/xuyue/work/storm_libs/*.jar
-
