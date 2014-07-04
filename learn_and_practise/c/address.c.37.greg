@@ -1,0 +1,77 @@
+
+;; Function main (main)
+
+;; Register dispositions:
+58 in 0  59 in 0  61 in 0  62 in 0  63 in 0  64 in 0  
+
+
+;; Hard regs used:  0 6 17
+
+(note 2 0 4 NOTE_INSN_DELETED)
+
+(note 4 2 7 0 NOTE_INSN_FUNCTION_BEG)
+
+;; Start of basic block 1, registers live: 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+(note 7 4 9 1 [bb 1] NOTE_INSN_BASIC_BLOCK)
+
+(insn 9 7 10 1 (parallel [
+            (set (reg/f:SI 0 ax [61])
+                (plus:SI (reg/f:SI 6 bp)
+                    (const_int -20 [0xffffffec])))
+            (clobber (reg:CC 17 flags))
+        ]) 148 {*addsi_1} (nil)
+    (nil))
+
+(insn 10 9 12 1 (set (mem/c/i:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -12 [0xfffffff4])) [0 b+0 S4 A32])
+        (reg/f:SI 0 ax [61])) 34 {*movsi_1} (nil)
+    (expr_list:REG_EQUAL (plus:SI (reg/f:SI 6 bp)
+            (const_int -20 [0xffffffec]))
+        (nil)))
+
+(insn 12 10 13 1 (set (reg/f:SI 0 ax [orig:62 b ] [62])
+        (mem/c/i:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -12 [0xfffffff4])) [0 b+0 S4 A32])) 34 {*movsi_1} (nil)
+    (nil))
+
+(insn 13 12 15 1 (set (mem/s/j:SI (reg/f:SI 0 ax [orig:62 b ] [62]) [0 <variable>.a+0 S4 A32])
+        (const_int 1 [0x1])) 34 {*movsi_1} (nil)
+    (nil))
+
+(insn 15 13 16 1 (parallel [
+            (set (reg/f:SI 0 ax [63])
+                (plus:SI (reg/f:SI 6 bp)
+                    (const_int -20 [0xffffffec])))
+            (clobber (reg:CC 17 flags))
+        ]) 148 {*addsi_1} (nil)
+    (nil))
+
+(insn 16 15 18 1 (set (mem/c/i:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -8 [0xfffffff8])) [0 d+0 S4 A32])
+        (reg/f:SI 0 ax [63])) 34 {*movsi_1} (nil)
+    (expr_list:REG_EQUAL (plus:SI (reg/f:SI 6 bp)
+            (const_int -20 [0xffffffec]))
+        (nil)))
+
+(insn 18 16 19 1 (set (reg/f:SI 0 ax [orig:64 d ] [64])
+        (mem/c/i:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -8 [0xfffffff8])) [0 d+0 S4 A32])) 34 {*movsi_1} (nil)
+    (nil))
+
+(insn 19 18 21 1 (set (mem:SI (reg/f:SI 0 ax [orig:64 d ] [64]) [0 S4 A32])
+        (const_int 2 [0x2])) 34 {*movsi_1} (nil)
+    (nil))
+
+(insn 21 19 25 1 (set (reg:SI 0 ax [orig:58 D.1289 ] [58])
+        (const_int 0 [0x0])) 34 {*movsi_1} (nil)
+    (nil))
+
+(note 25 21 34 1 NOTE_INSN_FUNCTION_END)
+
+(insn 34 25 38 1 (use (reg/i:SI 0 ax [ <result> ])) -1 (nil)
+    (nil))
+;; End of basic block 1, registers live:
+ 0 [ax] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+(note 38 34 0 NOTE_INSN_DELETED)
+
