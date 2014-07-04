@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/xuyue/work/storm_ips/input'
+let g:netrw_dirhist_2='/home/xuyue/work/svn/svn/ems-all/ems-stormtop/multilang/resources/ips/messageparser'
+let g:netrw_dirhist_3='/home/xuyue/work/storm_ips/ips/insertdb'
